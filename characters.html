@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AppWeb/css/sass/style.css">
+    <title>Characters</title>
+</head>
+<body>
+    <header class="navBar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="characters.html">Personajes</a></li>
+                <li><a href="sugerencias.html">Sugerencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>PERSONAJES</h1>
+    <p>
+        ¡Bienvenido a la aplicación de Rick and Morty! Aquí podrás explorar el universo de la popular serie de televisión y conocer todos los personajes que hacen de esta serie un éxito.
+        
+        Nuestra aplicación cuenta con una amplia base de datos de personajes, desde los protagonistas Rick y Morty hasta los personajes secundarios más peculiares. Podrás ver información detallada sobre cada personaje, como su nombre, especie, origen, afiliaciones y habilidades especiales.
+        
+        Además, podrás explorar las diferentes dimensiones en las que los personajes han viajado y descubrir nuevos mundos y especies. Nuestra aplicación también te permite crear tu propia lista de personajes favoritos para que puedas seguirlos de cerca a medida que avanzas en la serie.
+        
+        ¿No recuerdas el nombre de algún personaje o quieres saber más sobre él? ¡No hay problema! Nuestra función de búsqueda te permite encontrar rápidamente cualquier personaje y acceder a su información completa.
+    </p>
+    <div class="btnBuscar">
+        <input type="text" id="nameCharacter">
+        <button class="btn" onclick="sendCharacter()">Search</button>
+    </div>
+
+    <div id="result" class="result">
+
+    </div>
+
+    
+    
+    <div class="line"></div>
+    <footer>
+        <p class="piePagina">&copy; 2023 Nelsper. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/fetchCharacter.js"></script>
+</body>
+</html>

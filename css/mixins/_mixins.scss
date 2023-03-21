@@ -1,0 +1,17 @@
+//Etiqueta header
+@mixin navBar($posicion, $top, $ancho, $z-i, $bg-color){
+    position: $posicion;
+    margin-top: $top;
+    width: $ancho;
+    z-index: $z-i;
+    background-color: $bg-color
+};
+
+//Etiqueta a
+@mixin a($font-family, $font-size-paragraphs, $font-color, $padding-a){
+    font-family: $font-family;
+    font-size: $font-size-paragraphs;
+    color: $font-color;
+    padding: $padding-a;
+};
+
