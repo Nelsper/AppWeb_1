@@ -1,3 +1,84 @@
+form {
+  background: linear-gradient(45deg, rgb(162, 0, 255) 0%, rgb(0, 217, 255));
+  border: 1px solid rgb(55, 0, 255);
+  border-radius: 3px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  font-family: cursive;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select {
+  padding: 10px;
+  border: 1px solid rgb(55, 0, 255);
+  border-radius: 3px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+select:focus {
+  outline: none;
+  border: 1px solid aqua;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid rgb(55, 0, 255);
+  border-radius: 3px;
+  width: 100%;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid aqua;
+}
+
+select {
+  font-family: cursive;
+  border: 1px solid rgb(55, 0, 255);
+}
+
+button[type=submit] {
+  background-color: rgb(81, 245, 245);
+  font-family: cursive;
+  color: rgb(0, 3, 46);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button[type=submit]:hover {
+  background-color: aqua;
+  color: rgb(255, 255, 255);
+}
+
+.error-message {
+  color: tomato;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.invalid {
+  border: 1px solid tomato;
+  background-color: white;
+}
+
 * {
   margin: 0;
   padding: 0;

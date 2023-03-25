@@ -16,20 +16,24 @@ function sendCharacter(){
         fetch(`https://rickandmortyapi.com/api/character/?name=${character}`)
         .then(response => response.json())
         .then(data => {
+            //Recorremos la data 
+            data.results.forEach(character => {
 
-            //Creamos el elemento donde se mostrará el nombre
-            const nombre = document.createElement('p');
-            //Agregar el nombre al elemento
-            nombre.innerText = data.results[0].name;
-            //Agregar el elemento al resultado
-            result.appendChild(nombre);
-    
-            //Creamos el elmento donde se mostrará la imagen
-            const imagen = document.createElement('img');
-            //Agregar la imagen al elemento
-            imagen.src = data.results[0].image;
-            //Agregar el elemento al resultado
-            result.appendChild(imagen);
+                //Creamos el elemento donde se mostrará el nombre
+                const nombre = document.createElement('p');
+                //Agregar el nombre al elemento
+                nombre.innerText = character.name;
+                //Agregar el elemento al resultado
+                result.appendChild(nombre);
+        
+                //Creamos el elmento donde se mostrará la imagen
+                const imagen = document.createElement('img');
+                //Agregar la imagen al elemento
+                imagen.src = character.image;
+                //Agregar el elemento al resultado
+                result.appendChild(imagen);
+            });
+
         })
         .catch(error => console.error(error));
     }

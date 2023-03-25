@@ -15,3 +15,8 @@
     padding: $padding-a;
 };
 
+//Degradado
+@mixin degrade($color-deg){
+    background: linear-gradient(45deg, rgb(162,0,255)0%, rgb(0, 217,255));
+}
+

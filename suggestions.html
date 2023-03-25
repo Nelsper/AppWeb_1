@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AppWeb/css/sass/style.css">
+    <title>Suggestions</title>
+</head>
+<body>
+    <header class="navBar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="characters.html">Personajes</a></li>
+                <li><a href="suggestions.html">Sugerencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Buzon de Sugerencias, Quejas y Reclamos</h1>
+
+    <form id="sugerencia">
+        <div id="buzon">
+            <label for="id-type">Tipo de Solicitud</label>
+            <select name="id-type" id="id-type" class="invalid">
+                <option value="">Seleccione el tipo de solicitud</option>
+                <option value="1">Sugerencia</option>
+                <option value="2">Queja</option>
+                <option value="3">Reclamo</option>
+            </select>
+            <span id="id-type-error" class="error-msj"></span>
+        </div>
+        <div id="contac">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" class="invalid">
+            <label for="phone">Telefono:</label>
+            <input type="number" id="phone" name="phone" class="invalid">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="invalid">
+            <span id="id-type-error" class="error-msj"></span>
+        </div>
+        <div>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" class="invalid">
+            <label for="coment">Comentarios</label>
+            <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
+            <!-- <input type="coment" id="coment" name="coment" class="invalid"> -->
+            <span id="id-type-error" class="error-msj"></span>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="submit">Cancelar</button>
+    </form>
+
+
+    <div class="line"></div>
+    <footer>
+        <p class="piePagina">&copy; 2023 Nelsper. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/sugerencia.js"></script>
+</body>
+</html>

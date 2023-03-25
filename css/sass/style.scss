@@ -1,6 +1,7 @@
 @import '../variables/var';
 @import '../funciones/function';
 @import '../mixins/mixins';
+@import '../form/form';
 
 //Convertimos los valores por defecto en 0
 *{
@@ -127,6 +128,8 @@ p{
         border: 2px solid $colorCambio;
     }
 }
+
+
 
 
 
