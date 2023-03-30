@@ -8,7 +8,7 @@ function sendCharacter(){
     //Comprobamos el valor del input
     if(character === ""){
         //Mostramos msj de error
-        const nombre = document.createElement('p');
+        const nombre = document.createElement('h1');
         nombre.innerText = ('Ingrese el nombre del personaje, por favor.');
         result.appendChild(nombre);
     }else{

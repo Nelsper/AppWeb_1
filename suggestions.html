@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/AppWeb/css/sass/style.css">
+    <link rel="stylesheet" href="/css/sass/style.css">
     <title>Suggestions</title>
 </head>
 <body>
@@ -21,9 +21,9 @@
     <h1>Buzon de Sugerencias, Quejas y Reclamos</h1>
 
     <form id="sugerencia">
-        <div id="buzon">
+        <div>
             <label for="id-type">Tipo de Solicitud</label>
-            <select name="id-type" id="id-type" class="invalid">
+            <select name="id-type" id="id-type" required>
                 <option value="">Seleccione el tipo de solicitud</option>
                 <option value="1">Sugerencia</option>
                 <option value="2">Queja</option>
@@ -31,25 +31,39 @@
             </select>
             <span id="id-type-error" class="error-msj"></span>
         </div>
-        <div id="contac">
+
+        <div>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" class="invalid">
-            <label for="phone">Telefono:</label>
-            <input type="number" id="phone" name="phone" class="invalid">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" class="invalid">
-            <span id="id-type-error" class="error-msj"></span>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" class="error-msj"></span>
         </div>
+
+        <div>
+            <label for="phone">Telefono:</label>
+            <input type="number" id="phone" name="phone" required>
+            <span id="phone-error" class="error-msj"></span>
+        </div>
+
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error-msj"></span>
+        </div>
+
         <div>
             <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" class="invalid">
-            <label for="coment">Comentarios</label>
-            <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
-            <!-- <input type="coment" id="coment" name="coment" class="invalid"> -->
-            <span id="id-type-error" class="error-msj"></span>
+            <input type="text" id="asunto" name="asunto" required>
+            <span id="asunto-error" class="error-msj"></span>
         </div>
+         
+        <div>
+            <label for="coment">Comentarios</label>
+            <textarea name="coment" id="coment" cols="30" rows="10" required></textarea>
+            <span id="coment-error" class="error-msj"></span>
+        </div> 
+
         <button type="submit">Enviar</button>
-        <button type="submit">Cancelar</button>
+        <!-- <button type="submit">Cancelar</button> -->
     </form>
 
 
