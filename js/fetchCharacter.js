@@ -32,8 +32,9 @@ function sendCharacter(){
                 imagen.src = character.image;
                 //Agregar el elemento al resultado
                 result.appendChild(imagen);
-            });
 
+            });
+            
         })
         .catch(error => console.error(error));
     }

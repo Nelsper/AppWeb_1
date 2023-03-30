@@ -23,7 +23,7 @@
     <form id="sugerencia">
         <div>
             <label for="id-type">Tipo de Solicitud</label>
-            <select name="id-type" id="id-type" required>
+            <select name="id-type" id="id-type" class="invalid">
                 <option value="">Seleccione el tipo de solicitud</option>
                 <option value="1">Sugerencia</option>
                 <option value="2">Queja</option>
@@ -34,31 +34,31 @@
 
         <div>
             <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" class="invalid">
             <span id="name-error" class="error-msj"></span>
         </div>
 
         <div>
             <label for="phone">Telefono:</label>
-            <input type="number" id="phone" name="phone" required>
+            <input type="number" id="phone" name="phone" class="invalid">
             <span id="phone-error" class="error-msj"></span>
         </div>
 
         <div>
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" class="invalid">
             <span id="email-error" class="error-msj"></span>
         </div>
 
         <div>
             <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+            <input type="text" id="asunto" name="asunto" class="invalid">
             <span id="asunto-error" class="error-msj"></span>
         </div>
          
         <div>
             <label for="coment">Comentarios</label>
-            <textarea name="coment" id="coment" cols="30" rows="10" required></textarea>
+            <textarea name="coment" id="coment" cols="30" rows="10" class="invalid"></textarea>
             <span id="coment-error" class="error-msj"></span>
         </div> 
 
