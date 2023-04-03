@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
         return false;
     }
     //Si todos los campos tienen valores, se envia el formulario
-    alert('Su petición se ha enviado.');
+    alert(`${nombre} Su petición se ha enviado.`);
     form.submit();
 });
 

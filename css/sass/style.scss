@@ -18,7 +18,7 @@ body{
 //NavBar
 .navBar{
     @include navBar($posicion,$top, $ancho, $z-i, $bg-color);
-    
+    backdrop-filter: blur(5px);
     ul{
         list-style: style none;
         padding: 0;
